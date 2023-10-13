@@ -22,7 +22,7 @@ const GrainSection = () => {
 
     return (
         <section id="sixth-section" className="section common-section common-bg">
-            <Image ref={closeVideo} onClick={(e: React.MouseEvent<HTMLImageElement, MouseEvent>) => handleCloseVideo(e)} width={30} height={30} src="/assets/images/close-video.svg" className="position-absolute close-video" alt="close-btn"></Image>
+            <Image ref={closeVideo} onClick={(e: React.MouseEvent<HTMLImageElement, MouseEvent>) => handleCloseVideo(e)} width={30} height={30} src="/assets/images/close-video.svg" className="position-absolute close-video" alt="close-btn" loading="lazy"></Image>
             <video ref={video} className="d-none" controls loop muted playsInline preload="none" poster="/assets/images/sixth-video.webp">
                 <source src="/assets/videos/sixth-video.mp4" type="video/mp4" />
                 <source src="/assets/videos/sixth-video.webm" type="video/webm" />

@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import { useRef } from "react"
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import dynamic from "next/dynamic";
@@ -26,6 +25,7 @@ const TabCarousel = () => {
     return (
 
         <>
+        <Image src="/assets/images/eighthbg.svg" alt="eighth-bg" fill={true} className="eight-bg position-absolute" loading="lazy" />
             <div className="tab-section">
                 <div className="nav nav-tabs tabs" id="nav-tab" role="tablist">
                     <button

@@ -82,7 +82,7 @@ export default function Home() {
             src="/assets/images/close-btn.svg"
             alt="close-btn"
             width={17}
-            height={17}
+            height={17} loading="lazy"
           />
         </div>
         <div className="header-logo">
@@ -90,7 +90,7 @@ export default function Home() {
             src="/assets/images/menu-logo.svg"
             alt="logo"
             width={120}
-            height={35.75}
+            height={35.75} loading="lazy"
           />
         </div>
         <ul>
@@ -131,7 +131,7 @@ export default function Home() {
                 src="/assets/images/menu-instagram.svg"
                 alt="logo"
                 width={19}
-                height={19}
+                height={19} loading="lazy"
               />
             </span>
             INSTAGRAM
@@ -148,7 +148,7 @@ export default function Home() {
             src="/assets/images/logo.svg"
             alt="logo"
             width={151}
-            height={45}
+            height={45} loading="lazy"
           />
         </div>
         <ul ref={ul}>
@@ -182,7 +182,7 @@ export default function Home() {
           <Image
             className=""
             src="/assets/images/ham-menu.svg"
-            alt="ham-menu"
+            alt="ham-menu" loading="lazy"
             width={25}
             height={25}
           />
@@ -193,11 +193,9 @@ export default function Home() {
       <section id="home-section" className="section common-section">
         <div className="home-container">
           <Image
-            className="bg-img"
+            className="bg-img position-absolute"
             src="/assets/images/firstbg.svg"
-            alt="img"
-            width={1920}
-            height={1080} loading="lazy"
+            alt="img" fill={true} loading="lazy"
           />
           <div className="content container">
             <div className="text-section">
@@ -209,7 +207,7 @@ export default function Home() {
                     src="/assets/images/leaf.svg"
                     alt="leaf"
                     width={17}
-                    height={17}
+                    height={17} loading="lazy"
                   />
                 </span>
               </h1>
@@ -227,9 +225,9 @@ export default function Home() {
               <Image
                 src="/assets/images/symbol.svg"
                 alt="img"
-                className="symbol-img"
+                className="symbol-img position-absolute"
                 width={154}
-                height={154}
+                height={154} loading="lazy"
               />
               <a
                 aria-label="View Recipes"
@@ -241,11 +239,9 @@ export default function Home() {
             </div>
           </div>
           <Image
-            className="bottom-img"
+            className="bottom-img position-absolute"
             src="/assets/images/bottom.webp"
-            alt="img"
-            width={1920}
-            height={1080} loading="eager"
+            alt="img" fill={true} loading="lazy"
           />
           <Popup />
         </div>
@@ -279,20 +275,20 @@ export default function Home() {
               </div>
               <div className="col-xl-7">
                 <div className="right first-carousel" data-aos="slide-up">
-                  <OwlCarousel className="owl-theme" items={1} margin={30} loop={true} nav={false} autoplay={true} autoplayTimeout={4000} smartSpeed={2000} responsive={Responsive}>
+                  <OwlCarousel className="owl-theme" items={1} margin={30} loop={true} nav={false} autoplay={false} autoplayTimeout={4000} smartSpeed={2000} responsive={Responsive}>
                     <div className="item">
                       <div className="img-container-1">
                         <Image
                           src="/assets/images/carousel-1-top-left.webp"
-                          alt="img" width={34} height={36}
+                          alt="img" width={34} height={36} loading="lazy"
                         />
                         <Image
                           src="/assets/images/carousel-1-top-right.webp"
-                          alt="img" width={238} height={242}
+                          alt="img" width={238} height={242} loading="lazy"
                         />
                         <Image
                           src="/assets/images/carousel-1-middle-left.webp"
-                          alt="img" width={132} height={125}
+                          alt="img" width={132} height={125} loading="lazy"
                         />
                         <video
                           className="middle"
@@ -320,7 +316,7 @@ export default function Home() {
                         <Image
                           src="/assets/images/carousel-1-middle-right.webp"
                           alt="img"
-                          width={52} height={53}
+                          width={52} height={53} loading="lazy"
                         />
                         <video
                           playsInline
@@ -341,7 +337,7 @@ export default function Home() {
                         </video>
                         <Image
                           src="/assets/images/carousel-1-bottom-right.webp"
-                          alt="img" width={382} height={331}
+                          alt="img" width={382} height={331} loading="lazy"
                         />
                       </div>
                     </div>
@@ -349,15 +345,15 @@ export default function Home() {
                       <div className="img-container-2">
                         <Image
                           src="/assets/images/carousel-2-top-left.webp"
-                          alt="img" width={132} height={125}
+                          alt="img" width={132} height={125} loading="lazy"
                         />
                         <Image
                           src="/assets/images/carousel-2-top-left-2.webp"
-                          alt="img" width={41} height={41}
+                          alt="img" width={41} height={41} loading="lazy"
                         />
                         <Image
                           src="/assets/images/carousel-2-middle.webp"
-                          alt="img" width={500} height={500}
+                          alt="img" width={500} height={500} loading="lazy"
                         />
                         <video
                           className="bottom-left opacity-75"
@@ -378,15 +374,15 @@ export default function Home() {
                         </video>
                         <Image
                           src="/assets/images/carousel-2-bottom-left-2.webp"
-                          alt="img" width={238} height={242}
+                          alt="img" width={238} height={242} loading="lazy"
                         />
                         <Image
                           src="/assets/images/carousel-2-bottom-right.webp"
-                          alt="img" width={428} height={359}
+                          alt="img" width={428} height={359} loading="lazy"
                         />
                         <Image
                           src="/assets/images/carousel-2-bottom-right-2.webp"
-                          alt="img" width={48} height={48}
+                          alt="img" width={48} height={48} loading="lazy"
                         />
                       </div>
                     </div>
@@ -430,6 +426,7 @@ export default function Home() {
             <Image
               src="/assets/images/qr.webp"
               alt="qr-img"
+              loading="lazy"
               width={191}
               height={191}
             />
@@ -450,6 +447,7 @@ export default function Home() {
                     alt="img"
                     width={580}
                     height={778}
+                    loading="lazy"
                     data-aos="slide-up" data-aos-delay="100"
                   />
                   <video
@@ -483,6 +481,7 @@ export default function Home() {
                     alt="img"
                     width={782}
                     height={726}
+                    loading="lazy"
                     data-aos="slide-up" data-aos-delay="300"
                   />
                   <Image
@@ -490,6 +489,7 @@ export default function Home() {
                     alt="img"
                     width={158}
                     height={288}
+                    loading="lazy"
                     data-aos="zoom-in-up" data-aos-delay="400"
                   />
                   <Image
@@ -497,6 +497,7 @@ export default function Home() {
                     alt="img"
                     width={328}
                     height={234}
+                    loading="lazy"
                     data-aos="zoom-out" data-aos-delay="500"
                   />
                 </div>
@@ -555,6 +556,7 @@ export default function Home() {
                     alt="img"
                     width={580}
                     height={778}
+                    loading="lazy"
                     data-aos="slide-up"
                     data-wow-delay="100"
                   />
@@ -590,6 +592,7 @@ export default function Home() {
                     alt="img"
                     width={216}
                     height={229}
+                    loading="lazy"
                     data-aos="fade-left"
                     data-wow-delay="300"
                   />
@@ -598,6 +601,7 @@ export default function Home() {
                     alt="img"
                     width={382}
                     height={117}
+                    loading="lazy"
                     data-aos="zoom-in-left"
                     data-wow-delay="400"
                   />
@@ -606,6 +610,7 @@ export default function Home() {
                     alt="img"
                     width={727}
                     height={748}
+                    loading="lazy"
                     data-aos="slide-up"
                     data-wow-delay="500"
                   />
@@ -637,7 +642,7 @@ export default function Home() {
               className="top-right"
               width={403}
               height={410}
-              priority={true}
+              loading="lazy"
             />
             <div className="content">
               <h2 className="gothic text-lightgreen common-heading-2">
@@ -685,7 +690,7 @@ export default function Home() {
 
       {/* ======================= Section 9 ===================== */}
       <section id="ninth-section" className="section common-section">
-        <Image src="/assets/images/mixologistbg.svg" width="1920" height="1080" className="ninth-bg position-absolute" alt="bg-img" loading="lazy" />
+        <Image src="/assets/images/mixologistbg.svg" fill={true} className="ninth-bg position-absolute" alt="bg-img" loading="lazy" />
         <div className="container">
           <div className="ninth-container">
             <div className="row">
