@@ -174,7 +174,7 @@ button {
 
 .common-section {
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -576,6 +576,10 @@ button {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    .sidebar.active{
+        left: 0;
     }
 
     .sidebar ul {
@@ -1648,6 +1652,10 @@ video {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.ninth-carousel{
+    display: none;
 }
 
 .ninth-container .right video {
@@ -2916,6 +2924,14 @@ video {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .ninth-carousel{
+        display: block;
+    }
+
+    .ninth-container .right {
+        display: none;
+    }
+
     .spinner-square>.square {
         width: 10px;
         height: 50px;
