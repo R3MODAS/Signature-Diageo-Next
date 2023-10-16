@@ -1,10 +1,47 @@
+"use client";
+
 import Image from 'next/image'
-import React from 'react'
+import { useEffect, useRef } from 'react';
 
 const Popup = () => {
+    const PopupBtnRef = useRef<HTMLDivElement>(null);
+    const PopupBoxRef = useRef<HTMLDivElement>(null);
+
+    const onLoad = () => {
+        setTimeout(() => {
+            PopupBtnRef.current!.style.transform = "scale(1)";
+        }, 4000);
+    }
+
+    const showPopup = () => {
+        PopupBoxRef.current!.style.transform = "scale(1)";        
+    }
+
+    const closePopup = () => {
+        PopupBoxRef.current!.style.transform = "scale(0)";
+    }
+
+    const shrinkPopup = () => {
+        PopupBtnRef.current!.classList.toggle("active");
+    }
+
+    const shrinkonScroll = () => {
+        window.addEventListener("scroll", () => {
+            let scrollValue = window.scrollY;
+            if(scrollValue > 0){
+                PopupBtnRef.current!.classList.remove("active");
+            }
+        })
+    }
+
+    useEffect(() => {
+        onLoad();
+        shrinkonScroll();
+    }, [])
+
     return (
         <>
-            <div className="popup">
+            <div className="popup" ref={PopupBoxRef}>
                 <div className="popup-container">
                     <Image
                         className="popup-close"
@@ -12,6 +49,7 @@ const Popup = () => {
                         alt="close-icon"
                         width={7.5}
                         height={7.5}
+                        onClick={closePopup}
                     />
                     <div className="popup-top">
                         <Image
@@ -44,7 +82,8 @@ const Popup = () => {
                     </div>
                 </div>
             </div>
-            <div className="popup-btn active">
+
+            <div className="popup-btn active" ref={PopupBtnRef}>
                 <div className="popup-btn-container">
                     <Image
                         src="/assets/images/glass-btn.webp"
@@ -52,8 +91,9 @@ const Popup = () => {
                         className="img-fluid"
                         width={35}
                         height={35}
+                        onClick={shrinkPopup}
                     />
-                    <h2 className="gothic text-greenish">purchase online</h2>
+                    <h2 onClick={showPopup} className="gothic text-greenish">purchase online</h2>
                 </div>
             </div>
         </>

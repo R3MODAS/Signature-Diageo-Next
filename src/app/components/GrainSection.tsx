@@ -34,6 +34,8 @@ const GrainSection = () => {
             </video>
             <div className="container position-relative">
                 <Image
+                    data-aos="fade-up"
+                    data-aos-delay="100"
                     src="/assets/images/sixth-top.webp"
                     alt="img"
                     className="position-absolute sixth-top"
@@ -41,7 +43,7 @@ const GrainSection = () => {
                     height={37}
                     loading="lazy"
                 />
-                <div className="sixth-container">
+                <div className="sixth-container" data-aos="fade-up" data-aos-delay="200">
                     <h2 className="gothic text-lightgreen text-center common-heading-2">
                         grain to glass
                     </h2>
@@ -55,6 +57,7 @@ const GrainSection = () => {
                     </p>
                 </div>
                 <Image
+                    data-aos="fade-up" data-aos-delay="300"
                     ref={playBtn}
                     onClick={handleVideo}
                     src="/assets/images/play.svg"
@@ -65,6 +68,7 @@ const GrainSection = () => {
                     loading="lazy"
                 />
                 <Image
+                    data-aos="fade-up" data-aos-delay="400"
                     src="/assets/images/sixth-bottom-left.webp"
                     alt="img"
                     className="position-absolute sixth-bottom-left"
@@ -73,6 +77,7 @@ const GrainSection = () => {
                     loading="lazy"
                 />
                 <Image
+                    data-aos="fade-up" data-aos-delay="500"
                     src="/assets/images/sixth-bottom-right.webp"
                     alt="img"
                     className="position-absolute sixth-bottom-right"
@@ -81,6 +86,7 @@ const GrainSection = () => {
                     loading="lazy"
                 />
                 <Image
+                    data-aos="fade-up" data-aos-delay="600"
                     src="/assets/images/sixth-bottom-right-2.webp"
                     alt="img"
                     className="position-absolute sixth-bottom-right-2"

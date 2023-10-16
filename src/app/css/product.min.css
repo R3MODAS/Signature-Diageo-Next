@@ -43,6 +43,7 @@ body {
 
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 p {
@@ -56,10 +57,6 @@ h3,
 h4,
 h5 {
     margin: 0 !important;
-}
-
-img {
-    height: auto;
 }
 
 video {
@@ -513,16 +510,10 @@ button {
     transform-origin: bottom left;
 }
 
-.header-logo img {
-    width: 120px;
-    height: 35.75;
-    object-fit: cover;
-}
-
 @media (max-width: 1025px) {
     .logo>img {
-        width: 120px;
-        height: 46px;
+        width: auto;
+        height: auto;
         position: relative;
         left: 20px;
     }
@@ -637,7 +628,8 @@ button {
     }
 
     .header-logo img {
-        width: 120px;
+        width: auto;
+        height: auto;
     }
 
     .menu-btn a span {
@@ -658,6 +650,7 @@ button {
 @media (max-width: 576px) {
     .logo>img {
         width: 100px;
+        height: auto;
     }
 
     .logo {
@@ -699,6 +692,7 @@ button {
 .symbol-img {
     bottom: 34%;
     right: 16%;
+    height: auto;
 }
 
 #home-section .content {
@@ -770,6 +764,7 @@ button {
     top: 10%;
     right: 5%;
     cursor: pointer;
+    height: auto;
 }
 
 .popup-top {
@@ -778,9 +773,8 @@ button {
 }
 
 .popup-top img {
-    width: 31px;
-    height: 31px;
-    object-fit: cover;
+    width: auto;
+    height: auto;
 }
 
 .popup-top h2 {
@@ -805,6 +799,7 @@ button {
 .popup-middle .img {
     display: block;
     margin: auto;
+    height: auto;
 }
 
 .popup-middle .text {
@@ -849,6 +844,7 @@ button {
     display: inline-block;
     position: relative;
     z-index: 2;
+    height: auto;
 }
 
 .popup-btn h2 {
@@ -1016,14 +1012,16 @@ button {
 .first-carousel .img-container-2 img:nth-child(2) {
     top: 36%;
     left: 5%;
+    height: auto;
 }
 
 .first-carousel .img-container-2 img:nth-child(3) {
     top: 20%;
     left: 25%;
     z-index: 1;
-    width: auto !important;
-    height: auto !important;
+    width: 500px !important;
+    height: 500px !important;
+    object-fit: cover;
 }
 
 .first-carousel .img-container-2 .bottom-left {
@@ -1040,18 +1038,21 @@ button {
     bottom: 20%;
     left: -5%;
     z-index: 2;
+    height: auto;
 }
 
 .first-carousel .img-container-2 img:nth-child(6) {
     right: 1%;
     bottom: 10%;
     z-index: 2;
+    height: auto;
 }
 
 .first-carousel .img-container-2 img:nth-child(7) {
     bottom: 40%;
     right: 8%;
     z-index: 1;
+    height: auto;
 }
 
 #third-section {
@@ -1093,6 +1094,11 @@ button {
     font-weight: 400;
 }
 
+.third-container img {
+    width: 191px;
+    height: auto;
+}
+
 .fourth-container .left {
     position: relative;
     height: 100vh;
@@ -1116,6 +1122,7 @@ video {
     top: 8%;
     z-index: 2;
     left: 0%;
+    height: auto;
 }
 
 .fourth-container .left video {
@@ -1132,16 +1139,19 @@ video {
     top: 15%;
     left: -8%;
     z-index: 1;
+    height: auto;
 }
 
 .fourth-container .left img:nth-child(4) {
     bottom: 25%;
     left: 19%;
+    height: auto;
 }
 
 .fourth-container .left img:nth-child(5) {
     bottom: 0;
     right: 0;
+    height: auto;
 }
 
 .fourth-container .right h2 {
@@ -1195,6 +1205,7 @@ video {
     top: 10%;
     z-index: 1;
     left: -23%;
+    height: auto;
 }
 
 .fifth-container .right video {
@@ -1209,16 +1220,19 @@ video {
 .fifth-container .right img:nth-child(3) {
     bottom: 5%;
     left: -30%;
+    height: auto;
 }
 
 .fifth-container .right img:nth-child(4) {
     bottom: 26%;
     left: -22%;
+    height: auto;
 }
 
 .fifth-container .right img:nth-child(5) {
     bottom: 9%;
     right: 26%;
+    height: auto;
 }
 
 #sixth-section video {
@@ -1280,26 +1294,31 @@ video {
     left: 44%;
     z-index: 1;
     cursor: pointer;
+    height: auto;
 }
 
 .sixth-top {
     top: 31%;
     left: 43%;
+    height: auto;
 }
 
 .sixth-bottom-left {
     bottom: 18%;
     left: 30%;
+    height: auto;
 }
 
 .sixth-bottom-right {
     bottom: 40%;
     right: 37%;
+    height: auto;
 }
 
 .sixth-bottom-right-2 {
     bottom: 10%;
     right: 30%;
+    height: auto;
 }
 
 .video-section {
@@ -1346,6 +1365,7 @@ video {
     right: 50%;
     z-index: 1;
     cursor: pointer;
+    height: auto;
 }
 
 .seventh-container .top-left {
@@ -1535,8 +1555,18 @@ video {
     font-weight: 700;
 }
 
+.modal-left img {
+    width: 100%;
+    height: auto;
+}
+
 .recipe-method p {
     font-weight: 700;
+}
+
+.left-img img{
+    width: auto;
+    height: auto;
 }
 
 .carousel-content {
@@ -1765,23 +1795,29 @@ video {
 .tenth-container .top-left {
     top: 0;
     left: 10%;
+    width: 403px;
+    height: auto;
 }
 
 .tenth-container .top-right {
     top: 13%;
     right: 22%;
+    width: 228px;
+    height: auto;
 }
 
 .tenth-container .bottom-left {
     bottom: 0;
     left: 20%;
+    width: 288px;
+    height: auto;
 }
 
 .tenth-container .bottom-right {
     bottom: 15%;
     right: 13%;
     width: 247px;
-    height: 238px;
+    height: auto;
 }
 
 /* ============== Footer =============== */
@@ -1874,20 +1910,24 @@ video {
 
     .seventh-container .top-left {
         width: 260px;
+        height: auto;
     }
 
     .seventh-container .top-right {
         width: 340px;
         top: 7%;
+        height: auto;
     }
 
     .seventh-container .bottom-left {
         width: 210px;
         bottom: 8%;
+        height: auto;
     }
 
     .seventh-container .bottom-right {
         width: 230px;
+        height: auto;
     }
 
     .tenth-container .top-left {
@@ -2051,10 +2091,19 @@ video {
 }
 
 @media (max-width: 1280px) {
+
+    .first-carousel .img-container-1 img:nth-child(1) {
+        left: 6%;
+    }
+
     .first-carousel .img-container-1 .middle {
         width: 420px;
         height: 450px;
         left: 28%;
+    }
+
+    .first-carousel .img-container-1 img:nth-child(3) {
+        left: 16%;
     }
 
     .first-carousel .img-container-1 .bottom-left {
@@ -2065,8 +2114,8 @@ video {
     }
 
     .first-carousel .img-container-2 img:nth-child(3) {
-        width: 400px;
-        height: 450px;
+        width: 400px !important; 
+        height: 450px !important;
     }
 
     .first-carousel .img-container-2 .bottom-left {
@@ -2208,8 +2257,8 @@ video {
     }
 
     .first-carousel .img-container-2 img:nth-child(3) {
-        width: 420px;
-        height: 450px;
+        width: 420px !important;
+        height: 450px !important;
         position: relative;
         left: 28%;
     }
@@ -2581,8 +2630,8 @@ video {
 
     .first-carousel .img-container-2 img:nth-child(3) {
         left: 20%;
-        width: 420px;
-        height: 450px;
+        width: 420px !important;
+        height: 450px !important;
         position: relative;
     }
 
@@ -3107,7 +3156,6 @@ video {
         right: 5%;
         object-fit: cover;
         width: 200px;
-        height: 100px;
     }
 
     .tabs {
@@ -3228,6 +3276,14 @@ video {
 }
 
 @media (max-width: 576px) {
+    .ninth-carousel{
+        display: block;
+    }
+
+    .ninth-container .right {
+        display: none;
+    }
+
     .spinner-square>.square {
         width: 10px;
         height: 50px;
@@ -3298,18 +3354,21 @@ video {
     .first-carousel .img-container-1 img:nth-child(1) {
         width: 27px !important;
         left: 3%;
+        height: auto;
     }
 
     .first-carousel .img-container-1 img:nth-child(2) {
         width: 150px !important;
         right: 15%;
         top: 16%;
+        height: auto;
     }
 
     .first-carousel .img-container-1 img:nth-child(3) {
         width: 100px !important;
         left: 12%;
         top: 24%;
+        height: auto;
     }
 
     .first-carousel .img-container-1 .middle {
@@ -3322,6 +3381,7 @@ video {
         width: 41px !important;
         right: 22%;
         top: 42%;
+        height: auto;
     }
 
     .first-carousel .img-container-1 .bottom-left {
@@ -3335,24 +3395,27 @@ video {
         width: 172px !important;
         bottom: 22%;
         right: 24%;
+        height: auto;
     }
 
     .first-carousel .img-container-2 img:nth-child(1) {
         width: 100px !important;
         left: 12%;
         top: 24%;
+        height: auto;
     }
 
     .first-carousel .img-container-2 img:nth-child(2) {
         width: 27px !important;
         left: 3%;
         top: 28%;
+        height: auto;
     }
 
     .first-carousel .img-container-2 img:nth-child(3) {
         object-fit: cover;
         width: 270px !important;
-        height: 250px;
+        height: 250px !important;
         left: 24%;
     }
 
@@ -3367,18 +3430,21 @@ video {
         width: 141px !important;
         bottom: 28%;
         left: 8%;
+        height: auto;
     }
 
     .first-carousel .img-container-2 img:nth-child(6) {
         right: 17%;
         bottom: 23%;
         width: 219px !important;
+        height: auto;
     }
 
     .first-carousel .img-container-2 img:nth-child(7) {
         bottom: 50%;
         right: 25%;
         width: 32px !important;
+        height: auto;
     }
 
     .third-container p {
@@ -3593,7 +3659,6 @@ video {
         bottom: 0;
         right: 0;
         width: 160px;
-        height: 100px;
     }
 
     .tab-container {
