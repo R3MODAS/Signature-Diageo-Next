@@ -150,12 +150,12 @@ export default function Home() {
       if (tenthSect!.getBoundingClientRect().top < -400) {
         RemoveEffect!.forEach((item: any) => {
           item!.style.opacity = 0;
-          item!.style.transition = "0.6s ease";
+          item!.style.transition = "1.2s ease-in-out";
         });
       } else {
         RemoveEffect!.forEach((item: any) => {
           item!.style.opacity = 1;
-          item!.style.transition = "0.6s ease";
+          item!.style.transition = "1.2s ease-in-out";
         });
       }
     })
