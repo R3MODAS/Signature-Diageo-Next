@@ -2,7 +2,8 @@ import Script from "next/script";
 import type { Metadata } from 'next'
 import "./css/bootstrap.min.css"
 import './css/animate.min.css'
-import './css/product.min.css';
+import './scss/global.scss'
+import './scss/responsive.scss'
 
 export const metadata: Metadata = {
   title: 'Signature | Product',
