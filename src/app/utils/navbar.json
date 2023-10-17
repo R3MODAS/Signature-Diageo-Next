@@ -1,0 +1,33 @@
+[
+    {   
+        "id" : 1,
+        "href" : "#second-section",
+        "title" : "Our Master Blender",
+        "className" : "bebas"
+    },
+    {
+        "id" : 2,
+        "href" : "#fourth-section",
+        "title" : "Products",
+        "className" : "bebas"
+    },
+    {
+        "id" : 3,
+        "href" : "#sixth-section",
+        "title" : "Grain To Glass",
+        "className" : "bebas"
+    },
+    {   
+        "id" : 4,
+        "href" : "#eighth-section",
+        "title" : "Recipes",
+        "className" : "bebas"
+    },
+    {
+        "id" : 5,
+        "href" : "#ninth-section",
+        "title" : "Our mixologists",
+        "className" : "bebas"
+    }
+
+]
