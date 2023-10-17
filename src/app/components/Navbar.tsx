@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import navlinks from "@/app/utils/navbar.json";
+import navlinks from "@/app/utils/nav.json";
 import sidebarlinks from "@/app/utils/sidebar.json";
 import Link from "next/link";
 
